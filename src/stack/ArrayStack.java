@@ -15,7 +15,7 @@ public class ArrayStack<E> {
     //入栈--扩容
     public void push(Object o){
         if(top == elements.length - 1){
-            resize(2 + elements.length)
+            resize(2 + elements.length);
         }
         elements[++top] = o;
     }
